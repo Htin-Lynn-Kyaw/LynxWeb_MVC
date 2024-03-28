@@ -19,7 +19,7 @@ namespace LynxWeb.Data
                     new Category { ID = 2, Name = "SciFi", DisplayOrder = 2 },
                     new Category { ID = 3, Name = "Horror", DisplayOrder = 3 }
                 );
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
         }
 
     }
