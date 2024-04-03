@@ -1,7 +1,7 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
-namespace LynxWeb.Models.Entities
+namespace LynxWebRazor.Models
 {
     public class Category
     {
@@ -10,9 +10,9 @@ namespace LynxWeb.Models.Entities
         [Required]
         [MaxLength(39)]
         [DisplayName("Category Name")]
-        public  string Name { get; set; }
+        public string Name { get; set; }
         [DisplayName("Display Name")]
-        [Range(1,100, ErrorMessage = "The field Display Name must be between 1-100.")]
+        [Range(1, 100, ErrorMessage = "The field Display Name must be between 1-100.")]
         public int DisplayOrder { get; set; }
     }
 }
