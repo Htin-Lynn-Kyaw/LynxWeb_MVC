@@ -1,9 +1,11 @@
 ﻿@page
-@model LynxWebRazor.Pages.Categories.CreateModel
+@model LynxWebRazor.Pages.Categories.DeleteModel
+<h1>Edit Category</h1>
 <form method="post">
+    <input asp-for="Category.ID" hidden />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary">Create Category</h2>
+            <h2 class="text-primary">Edit Category</h2>
             <hr />
         </div>
     </div>
@@ -20,7 +22,7 @@
     </div>
     <div class="row">
         <div class="col-6 col-md-3">
-            <button id="btnsubmit" type="submit" class="btn btn-primary form-control">Create</button>
+            <button type="submit" class="btn btn-primary form-control">Delete</button>
         </div>
         <div class="col-6 col-md-3">
             <a asp-page="/Categories/Index" class="btn btn-secondary form-control">
